@@ -1,0 +1,109 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    background-color: #00CFC8;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 30px;
+}
+
+body {
+    background-color: #FFF5D6;
+    background: size 50PX;
+}
+
+.info ul {
+    background-color: #00CFC8;
+    display: flex;
+    gap: 328px;
+    list-style: none;
+    text-align: center;
+}
+
+.butao{
+    color: #4D023D;
+    background-color: #00CFC8;
+    border: none;
+    font-family: poppins;
+    font-size: 17px;
+    font-weight: 600;
+    transition-duration: 0.4ms;
+}
+.butao:hover{
+    color: #B3058F;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.retangulo {
+    background-color: #FFF5D6;
+    display: flex;
+    justify-content: center;
+}
+
+.livro {
+    width: 318px;
+    height: 276px;
+    border: 2px;
+    padding: 12px;
+}
+
+.produtos {
+    background-image: url(imagens/fundo\ cheio.png);
+    width: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.produtos h1 {
+
+    color: white;
+    font-weight: bold;
+    font-family: poppins;
+    text-align: center;
+    font-size: 550%;
+    display: flex;
+    width: 821px;
+    height: 250px;
+    font-family: Poppins;
+    font-size: 128px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 128px;
+
+}
+
+footer{
+    background-color: #660051;
+    align-items: center;
+    padding: 8px 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logorp {
+    width: 150px;
+}
+
+.redes {
+    width: 80px;
+}
+
+.txtrodapé {
+    width: 250px;
+    height: 10px;
+}
+

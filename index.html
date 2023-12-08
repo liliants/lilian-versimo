@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu</title>
+    <link rel="stylesheet" href="menu.css">
+    <style>
+        body {
+            font-family: poppins;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            text-transform: uppercase;
+            background-color: rgb(255, 255, 255);
+
+
+
+
+        }
+
+
+        .popup-caixa {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.41);
+        }
+
+
+        .popup-conteudo {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-image: url(imagens/fundo.png);
+            padding: 0px 58px 150px 58px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgb(0, 0, 0);
+            width: 480 px;
+            height: 300px;
+        }
+
+
+        .fechar {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+
+        h2 {
+            color: lightpink;
+        }
+
+
+        p {
+            color: #00CFC8;
+        }
+
+
+        button {
+            background-color: pink;
+            font-family: poppins;
+            border: none;
+            border-radius: 10px;
+            padding: 10px 50px;
+            font-size: 20px;
+        }
+
+        h1 {
+            margin: 50px;
+            font-size: 40px;
+        }
+
+
+
+
+
+        .textinho {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Conteúdo da Página Principal -->
+    <!-- Pop-up Container -->
+    <div class="popup-caixa" id="popup">
+        <div class="popup-conteudo">
+            <span class="fechar" onclick="fecharPopup()">&times;</span>
+            <div class="texto">
+                <h2 class="textinho">sejam bem vindos</h2>
+                <p class="textinho">se cadastre</p>
+            </div>
+            <div class="texto2">
+                <h1>frete grátis</h1>
+                <button>cadastre-se</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Botão para abrir o Pop-up -->
+
+
+
+    <script src="script.js"></script>
+
+
+    <script>
+        // Função para abrir o pop-up
+        function abrirPopup() {
+            var popup = document.getElementById("popup");
+            popup.style.display = "block";
+        }
+        setTimeout(abrirPopup, 2000)
+
+        // Função para fechar o pop-up
+        function fecharPopup() {
+            var popup = document.getElementById("popup");
+            popup.style.display = "none";
+        }
+        document.getElementById("titulo").style.color = "pink";
+    </script>
+
+
+
+
+
+
+
+    <header>
+        <div class="logo">
+            <img src="imagens/logo_color.png" alt="logo">
+        </div>
+        <div class="info">
+            <ul>
+                <li> <a href="https://media.tenor.com/m_B50ZygJjMAAAAC/gato-dan%C3%A7ando.gif"><button
+                            class="butao">Sobre nós</button></a></li>
+                <li><a href="https://media.tenor.com/ZuXnTDxIbjQAAAAC/shocked-shocked-cat.gif"><button
+                            class="butao">Produtos</button></a></li>
+                <li><a href="https://media.tenor.com/5AeBrrSXk34AAAAd/gato.gif"><button
+                            class="butao">Contato</button></a></li>
+            </ul>
+
+        </div>
+
+    </header>
+
+    <div class="produtos">
+        <h1>NOSSOS PRODUTOS</h1>
+    </div>
+    <div class="retangulo">
+        <img class="livro" src="imagens/pedro_homem de giz.jpg" alt="giz">
+        <img class="livro" src="imagens/ligia_ toca da raposa.jpg" alt="raposa">
+        <img class="livro" src="imagens/mavi_desafio dos semideuses.jpg" alt="final">
+        <img class="livro" src="imagens/pedro_btk.jpg" alt="btk">
+        <img class="livro" src="imagens/mavi_desafio dos semideuses.jpg" alt="desafio">
+    </div>
+    <footer>
+        <img class="logorp" src="C:\Users\Aluno\Desktop\lilian\SEMESTRE 2\HTML\Versímo\imagens\logo_branca.png"
+            alt="logorp">
+        <img class="redes" src="C:\Users\Aluno\Desktop\lilian\SEMESTRE 2\HTML\Versímo\imagens\redes.png" alt="redes">
+        <img class="txtrodapé" src="C:\Users\Aluno\Desktop\lilian\SEMESTRE 2\HTML\Versímo\imagens\rodapé.png"
+            alt="txtrodapé">
+    </footer>
+
+</body>
+
+</html>
